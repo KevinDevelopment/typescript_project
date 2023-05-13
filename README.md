@@ -4,7 +4,7 @@
 
 #### variáveis de ambiente
 
--- preencha as variaveis de ambiente conforme exemplo os arquivos env-example e db.env.docker
+-- preencha as variaveis de ambiente conforme os exemplos: env-example e db.env.docker
 
 #### inicie o container docker
 
