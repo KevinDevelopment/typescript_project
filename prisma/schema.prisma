@@ -19,9 +19,9 @@ model User {
 
 model Post {
   id        Int     @id @default(autoincrement())
+  userId Int?
   title     String
   content   String
   published Boolean @default(false)
-  author    User?   @relation(fields: [authorId], references: [id])
-  authorId  Int?
+  User   User? @relation(fields: [userId], references: [id])
 }
