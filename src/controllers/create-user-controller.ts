@@ -1,6 +1,7 @@
 import { Request, Response } from "express";
 import { validateEmail } from "../utils/validate-email";
-import { createUserService, findUserInDatabase } from "../factorys/dependencies";
+import { findUserInDatabase, createUserService } from "../factorys/dependencies";
+
 
 export class CreateUserController {
     async createUser(request: Request, response: Response) {

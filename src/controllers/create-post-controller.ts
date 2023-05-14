@@ -1,5 +1,5 @@
 import { Request, Response, json } from "express";
-import { createPostService } from "../factorys/dependencies";
+import { createPostService } from "../src/factorys/dependencies";
 
 export class CreatePostController {
     async createpost(request: Request, response: Response) {
