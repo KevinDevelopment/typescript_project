@@ -4,7 +4,7 @@ const prisma = new PrismaClient();
 export class CreatePostService {
     async createPost(title: string, content: string, published: boolean, userId: number) {
         try {
-            const createPostInDatabase = await prisma.post.create({
+           return await prisma.post.create({
                 data: {
                     title,
                     content,
@@ -16,7 +16,6 @@ export class CreatePostService {
                     }
                 }
             });
-            return createPostInDatabase;
         } catch (error) {
             console.error(error);
         }

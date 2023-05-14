@@ -23,6 +23,7 @@ export class CreateUserController {
         }
 
         const findUser = await findUserInDatabase.findUserById(email);
+        console.log(findUser);
 
         if (findUser) {
             return response.status(406).json({
