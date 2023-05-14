@@ -1,5 +1,4 @@
-import { PrismaClient } from "@prisma/client";
-const prisma = new PrismaClient();
+import { prisma } from "../factorys/dependencies";
 
 export class CreatePostService {
     async createPost(title: string, content: string, published: boolean, userId: number) {

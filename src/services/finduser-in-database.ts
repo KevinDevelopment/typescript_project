@@ -1,5 +1,4 @@
-import { PrismaClient } from "@prisma/client";
-const prisma = new PrismaClient();
+import { prisma } from "../factorys/dependencies";
 
 export class FindUserInDatabase {
     async findUserById(email: string) {
